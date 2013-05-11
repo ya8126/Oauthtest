@@ -33,11 +33,15 @@ import twitter4j.TwitterFactory;
 import twitter4j.auth.RequestToken;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
+
+@WebServlet(name="SigninServlet",urlPatterns={"/test"})
 public class SigninServlet extends HttpServlet {
     private static final long serialVersionUID = -6205814293093350242L;
 
